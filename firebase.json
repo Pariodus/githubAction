@@ -5,14 +5,20 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
     ]
   },
   "emulators": {
     "hosting": {
-      "port": "9999"
+      "port": 5000
     },
     "ui": {
-      "enabled": false
+      "enabled": true
     },
     "singleProjectMode": true
   }
